@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Tebu Segar - Minuman Alami</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        merah: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-red-50 text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-red-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2">
+                    <div class="bg-white text-red-700 w-10 h-10 rounded-full 
+                                flex items-center justify-center font-bold text-xl">
+                        ET
+                    </div>
+
+                    <span class="text-2xl font-extrabold">
+                        Es Tebu
+                    </span>
+                </a>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex items-center gap-8 font-medium">
+                    <a href="#home" class="hover:text-red-200 transition">
+                        Home
+                    </a>
+
+                    <a href="#menu" class="hover:text-red-200 transition">
+                        Menu Makanan
+                    </a>
+
+                    <a href="#tentang" class="hover:text-red-200 transition">
+                        Tentang
+                    </a>
+
+                    <a href="#kontak" class="hover:text-red-200 transition">
+                        Kontak
+                    </a>
+                </div>
+
+                <!-- Login -->
+                <button class="bg-white text-red-700 px-5 py-2 rounded-full
+                               font-bold hover:bg-red-100 transition shadow">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="bg-gradient-to-br from-red-700 via-red-600 to-red-500 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Hero Text -->
+                <div>
+                    <span class="inline-block bg-white/20 px-4 py-2 rounded-full
+                                 text-sm font-semibold mb-5">
+                        🌿 100% Tebu Segar
+                    </span>
+
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                        Segarnya
+                        <span class="text-yellow-300">
+                            Es Tebu
+                        </span>
+                        Setiap Hari!
+                    </h1>
+
+                    <p class="text-lg md:text-xl text-red-100 leading-relaxed mb-8 max-w-xl">
+                        Nikmati kesegaran alami air tebu pilihan yang diperas langsung
+                        dari tebu berkualitas. Manis alami, dingin, dan menyegarkan!
+                    </p>
+
+                    <!-- CTA -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+
+                        <a href="#menu"
+                           class="bg-white text-red-700 px-7 py-3 rounded-full
+                                  font-bold text-center hover:bg-red-100
+                                  transition shadow-lg">
+                            🍹 Lihat Menu
+                        </a>
+
+                        <a href="#kontak"
+                           class="border-2 border-white px-7 py-3 rounded-full
+                                  font-bold text-center hover:bg-white
+                                  hover:text-red-700 transition">
+                            Pesan Sekarang
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Hero Illustration -->
+                <div class="flex justify-center">
+                    <div class="relative">
+
+                        <!-- Circle Background -->
+                        <div class="w-72 h-72 md:w-96 md:h-96 bg-white/20
+                                    rounded-full flex items-center justify-center">
+
+                            <!-- Glass -->
+                            <div class="w-40 h-64 bg-gradient-to-b from-green-300
+                                        to-green-500 rounded-b-3xl rounded-t-lg
+                                        border-4 border-white shadow-2xl
+                                        relative overflow-hidden">
+
+                                <!-- Ice -->
+                                <div class="absolute top-8 left-5 w-8 h-8
+                                            bg-white/50 rounded-md rotate-12"></div>
+
+                                <div class="absolute top-16 right-5 w-9 h-9
+                                            bg-white/40 rounded-md -rotate-12"></div>
+
+                                <!-- Straw -->
+                                <div class="absolute -top-20 right-8 w-4 h-36
+                                            bg-red-900 rotate-12 rounded-full"></div>
+
+                                <!-- Glass Highlight -->
+                                <div class="absolute top-6 left-5 w-3 h-40
+                                            bg-white/40 rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <!-- Decoration -->
+                        <div class="absolute -top-5 -right-5 bg-yellow-300
+                                    text-red-800 px-5 py-3 rounded-full
+                                    font-bold shadow-lg rotate-12">
+                            SEGAR!
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <span class="text-red-600 font-bold uppercase tracking-widest">
+                    Menu Kami
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-extrabold text-red-800 mt-3">
+                    Pilihan Favorit
+                </h2>
+
+                <p class="text-gray-500 mt-4">
+                    Pilih minuman favoritmu dan nikmati kesegarannya.
+                </p>
+            </div>
+
+
+            <!-- Menu Cards -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div class="bg-red-50 rounded-3xl p-8 text-center
+                            border border-red-100 hover:-translate-y-2
+                            transition duration-300 shadow-sm hover:shadow-xl">
+
+                    <div class="text-7xl mb-6">
+                        🥤
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-red-800">
+                        Es Tebu Original
+                    </h3>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Air tebu segar dengan es batu dingin.
+                    </p>
+
+                    <div class="text-2xl font-extrabold text-red-600">
+                        Rp 8.000
+                    </div>
+
+                    <button class="mt-5 bg-red-600 text-white px-6 py-2
+                                   rounded-full font-bold hover:bg-red-700 transition">
+                        Pesan
+                    </button>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="bg-red-50 rounded-3xl p-8 text-center
+                            border border-red-100 hover:-translate-y-2
+                            transition duration-300 shadow-sm hover:shadow-xl">
+
+                    <div class="text-7xl mb-6">
+                        🍋
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-red-800">
+                        Es Tebu Lemon
+                    </h3>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Perpaduan air tebu manis dan lemon segar.
+                    </p>
+
+                    <div class="text-2xl font-extrabold text-red-600">
+                        Rp 10.000
+                    </div>
+
+                    <button class="mt-5 bg-red-600 text-white px-6 py-2
+                                   rounded-full font-bold hover:bg-red-700 transition">
+                        Pesan
+                    </button>
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="bg-red-50 rounded-3xl p-8 text-center
+                            border border-red-100 hover:-translate-y-2
+                            transition duration-300 shadow-sm hover:shadow-xl">
+
+                    <div class="text-7xl mb-6">
+                        🍓
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-red-800">
+                        Es Tebu Strawberry
+                    </h3>
+
+                    <p class="text-gray-600 mt-3 mb-5">
+                        Es tebu dengan rasa strawberry yang manis.
+                    </p>
+
+                    <div class="text-2xl font-extrabold text-red-600">
+                        Rp 12.000
+                    </div>
+
+                    <button class="mt-5 bg-red-600 text-white px-6 py-2
+                                   rounded-full font-bold hover:bg-red-700 transition">
+                        Pesan
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="tentang" class="bg-red-700 text-white py-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl font-extrabold mb-6">
+                Kenapa Pilih Es Tebu Kami?
+            </h2>
+
+            <p class="text-red-100 text-lg leading-relaxed max-w-3xl mx-auto">
+                Kami menggunakan tebu segar pilihan yang diproses langsung
+                untuk menjaga rasa manis alami dan kesegarannya.
+                Cocok diminum kapan saja, terutama saat cuaca panas!
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+
+                <div class="bg-white/10 rounded-2xl p-6">
+                    <div class="text-4xl mb-3">🌱</div>
+                    <h3 class="font-bold text-xl">Tebu Segar</h3>
+                    <p class="text-red-100 mt-2">
+                        Menggunakan tebu berkualitas.
+                    </p>
+                </div>
+
+                <div class="bg-white/10 rounded-2xl p-6">
+                    <div class="text-4xl mb-3">❄️</div>
+                    <h3 class="font-bold text-xl">Selalu Dingin</h3>
+                    <p class="text-red-100 mt-2">
+                        Disajikan dingin dan menyegarkan.
+                    </p>
+                </div>
+
+                <div class="bg-white/10 rounded-2xl p-6">
+                    <div class="text-4xl mb-3">❤️</div>
+                    <h3 class="font-bold text-xl">Dibuat Sepenuh Hati</h3>
+                    <p class="text-red-100 mt-2">
+                        Kualitas rasa adalah prioritas kami.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section id="kontak" class="py-20 bg-red-50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl md:text-5xl font-extrabold text-red-800">
+                Haus? Saatnya Minum Es Tebu!
+            </h2>
+
+            <p class="text-gray-600 mt-5 text-lg">
+                Pesan sekarang dan rasakan kesegaran tebu alami.
+            </p>
+
+            <div class="mt-8">
+                <a href="https://wa.me/6281234567890"
+                   class="inline-block bg-red-600 text-white px-8 py-4
+                          rounded-full font-bold text-lg shadow-lg
+                          hover:bg-red-700 transition">
+                    📱 Pesan Sekarang
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-red-900 text-white">
+
+        <div class="max-w-7xl mx-auto px-6 py-10">
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Brand -->
+                <div>
+                    <h3 class="text-2xl font-extrabold">
+                        🥤 Es Tebu
+                    </h3>
+
+                    <p class="text-red-200 mt-3">
+                        Kesegaran alami dari tebu pilihan.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="font-bold text-lg mb-3">
+                        Navigasi
+                    </h4>
+
+                    <div class="space-y-2 text-red-200">
+                        <a href="#home" class="block hover:text-white">
+                            Home
+                        </a>
+
+                        <a href="#menu" class="block hover:text-white">
+                            Menu
+                        </a>
+
+                        <a href="#tentang" class="block hover:text-white">
+                            Tentang Kami
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold text-lg mb-3">
+                        Hubungi Kami
+                    </h4>
+
+                    <p class="text-red-200">
+                        📍 Indonesia
+                    </p>
+
+                    <p class="text-red-200 mt-2">
+                        📞 0812-3456-7890
+                    </p>
+
+                    <p class="text-red-200 mt-2">
+                        ✉️ info@estebu.com
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="border-t border-red-800 mt-8 pt-6 text-center
+                        text-red-300">
+                <p>
+                    © 2026 Es Tebu. Semua Hak Dilindungi.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
